@@ -1,33 +1,65 @@
+
 import { Navbar } from "@/components/ui/navbar";
-import { Button } from "@/components/ui/button";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 const Index = () => {
+  const acceptedMembers = [
+    "DarkRaven",
+    "ShadowWhisper",
+    "MysticDragon",
+    "NightwalkerElite",
+    "CrimsonMage",
+    "EtherealPhantom",
+    "VoidSeeker",
+    "DoomHarbinger",
+  ];
+
+  const rejectedMembers = [
+    "LostSoul404",
+    "ChaosBreaker",
+    "StormCaller",
+    "DuskWanderer",
+    "SilentShade",
+  ];
+
   return (
     <div className="min-h-screen bg-doom-black bg-opacity-95 text-doom-silver">
       <Navbar />
       
       <main className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-          {/* Left Side - Status Buttons */}
-          <div className="lg:col-span-3 flex flex-row space-x-4">
-            <Button 
-              variant="outline"
-              className="w-full border-doom-purple hover:border-doom-neon-purple hover:animate-button-glow font-cinzel"
-            >
-              Przyjęci
-            </Button>
-            <Button 
-              variant="outline"
-              className="w-full border-doom-purple hover:border-doom-neon-purple hover:animate-button-glow font-cinzel"
-            >
-              Odrzuceni
-            </Button>
+          {/* Left Side - Member Lists */}
+          <div className="lg:col-span-3 grid grid-cols-2 gap-4">
+            <div className="w-full p-4 border border-doom-purple rounded-lg bg-doom-black/50">
+              <h3 className="font-cinzel text-doom-neon-purple mb-4 text-center">Przyjęci</h3>
+              <ScrollArea className="h-48">
+                <ul className="space-y-2">
+                  {acceptedMembers.map((member, index) => (
+                    <li key={index} className="font-cinzel text-doom-silver/80 hover:text-doom-neon-purple transition-colors text-sm">
+                      {member}
+                    </li>
+                  ))}
+                </ul>
+              </ScrollArea>
+            </div>
+            <div className="w-full p-4 border border-doom-purple rounded-lg bg-doom-black/50">
+              <h3 className="font-cinzel text-doom-neon-purple mb-4 text-center">Odrzuceni</h3>
+              <ScrollArea className="h-48">
+                <ul className="space-y-2">
+                  {rejectedMembers.map((member, index) => (
+                    <li key={index} className="font-cinzel text-doom-silver/80 hover:text-doom-neon-purple transition-colors text-sm">
+                      {member}
+                    </li>
+                  ))}
+                </ul>
+              </ScrollArea>
+            </div>
           </div>
 
           {/* Center - Main Content */}
           <div className="lg:col-span-6 text-center">
-            <h1 className="font-cinzel text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-text-glow bg-clip-text text-transparent bg-gradient-to-r from-doom-purple to-doom-neon-purple">
-              Doom Whispers
+            <h1 className="font-cinzel text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-pulse text-doom-neon-purple">
+              Doom Whisperers
             </h1>
             <p className="text-lg md:text-xl font-cinzel text-doom-silver/80 italic mb-12">
               "Szepty nie milkną. One czekają. A gdy je usłyszysz… jesteś już jednym z nich."
@@ -49,7 +81,7 @@ const Index = () => {
 
       <footer className="w-full bg-doom-black/90 border-t border-doom-purple/30 py-4 mt-12">
         <div className="container mx-auto text-center font-cinzel text-doom-silver/60">
-          Doom Whispers © 2025
+          Doom Whisperers © 2025
         </div>
       </footer>
     </div>
