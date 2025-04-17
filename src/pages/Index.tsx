@@ -1,4 +1,3 @@
-
 import { Navbar } from "@/components/ui/navbar";
 import { Button } from "@/components/ui/button";
 
@@ -35,11 +34,14 @@ const Index = () => {
             </p>
           </div>
 
-          {/* Right Side - Illustration */}
+          {/* Right Side - Dark Horse Illustration */}
           <div className="lg:col-span-3">
-            {/* Placeholder for illustration - you can replace with actual image */}
-            <div className="w-full aspect-square bg-doom-navy rounded-lg border border-doom-purple/30 animate-button-glow flex items-center justify-center">
-              <span className="text-doom-silver/50">Ilustracja</span>
+            <div className="w-full aspect-square rounded-lg border border-doom-purple/30 overflow-hidden">
+              <img 
+                src="/lovable-uploads/3bc4f1ec-2bc9-4083-9f06-b121fcb7c6bc.png"
+                alt="Mroczny koń z magicznymi, fioletowymi runami"
+                className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+              />
             </div>
           </div>
         </div>
