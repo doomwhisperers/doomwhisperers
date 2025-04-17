@@ -9,7 +9,7 @@ const Index = () => {
       <main className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Left Side - Status Buttons */}
-          <div className="lg:col-span-3 flex flex-col space-y-4">
+          <div className="lg:col-span-3 flex flex-row space-x-4">
             <Button 
               variant="outline"
               className="w-full border-doom-purple hover:border-doom-neon-purple hover:animate-button-glow font-cinzel"
