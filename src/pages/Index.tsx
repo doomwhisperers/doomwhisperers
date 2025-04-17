@@ -1,7 +1,6 @@
 
 import { Navbar } from "@/components/ui/navbar";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Discord, Instagram, Youtube } from "lucide-react";
 
 const Index = () => {
   const acceptedMembers = [
@@ -32,11 +31,11 @@ const Index = () => {
           {/* Left Side - Member Lists */}
           <div className="lg:col-span-3 grid grid-cols-2 gap-4">
             <div className="w-full p-4 border border-doom-purple rounded-lg bg-doom-black/50">
-              <h3 className="font-rocker text-doom-neon-purple mb-4 text-center">Przyjęci</h3>
+              <h3 className="font-cinzel text-doom-neon-purple mb-4 text-center">Przyjęci</h3>
               <ScrollArea className="h-48">
                 <ul className="space-y-2">
                   {acceptedMembers.map((member, index) => (
-                    <li key={index} className="font-fell text-doom-silver/80 hover:text-doom-neon-purple transition-colors text-sm">
+                    <li key={index} className="font-cinzel text-doom-silver/80 hover:text-doom-neon-purple transition-colors text-sm">
                       {member}
                     </li>
                   ))}
@@ -44,11 +43,11 @@ const Index = () => {
               </ScrollArea>
             </div>
             <div className="w-full p-4 border border-doom-purple rounded-lg bg-doom-black/50">
-              <h3 className="font-rocker text-doom-neon-purple mb-4 text-center">Odrzuceni</h3>
+              <h3 className="font-cinzel text-doom-neon-purple mb-4 text-center">Odrzuceni</h3>
               <ScrollArea className="h-48">
                 <ul className="space-y-2">
                   {rejectedMembers.map((member, index) => (
-                    <li key={index} className="font-fell text-doom-silver/80 hover:text-doom-neon-purple transition-colors text-sm">
+                    <li key={index} className="font-cinzel text-doom-silver/80 hover:text-doom-neon-purple transition-colors text-sm">
                       {member}
                     </li>
                   ))}
@@ -59,10 +58,10 @@ const Index = () => {
 
           {/* Center - Main Content */}
           <div className="lg:col-span-6 text-center">
-            <h1 className="font-rocker text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-pulse text-doom-neon-purple">
+            <h1 className="font-cinzel text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-pulse text-doom-neon-purple">
               Doom Whisperers
             </h1>
-            <p className="text-lg md:text-xl font-fell text-doom-silver/80 italic mb-12">
+            <p className="text-lg md:text-xl font-cinzel text-doom-silver/80 italic mb-12">
               "Szepty nie milkną. One czekają. A gdy je usłyszysz… jesteś już jednym z nich."
             </p>
           </div>
@@ -73,7 +72,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/3bc4f1ec-2bc9-4083-9f06-b121fcb7c6bc.png"
                 alt="Mroczny koń z magicznymi, fioletowymi runami"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
               />
             </div>
           </div>
@@ -81,24 +80,8 @@ const Index = () => {
       </main>
 
       <footer className="w-full bg-doom-black/90 border-t border-doom-purple/30 py-4 mt-12">
-        <div className="container mx-auto text-center">
-          <div className="flex justify-center items-center space-x-6 mb-4">
-            <a href="https://discord.gg/doomwhisperers" target="_blank" rel="noopener noreferrer" 
-               className="text-doom-silver hover:text-doom-neon-purple transition-colors">
-              <Discord className="w-6 h-6" />
-            </a>
-            <a href="https://instagram.com/doomwhisperers" target="_blank" rel="noopener noreferrer"
-               className="text-doom-silver hover:text-doom-neon-purple transition-colors">
-              <Instagram className="w-6 h-6" />
-            </a>
-            <a href="https://tiktok.com/@doomwhisperers" target="_blank" rel="noopener noreferrer"
-               className="text-doom-silver hover:text-doom-neon-purple transition-colors">
-              <Youtube className="w-6 h-6" />
-            </a>
-          </div>
-          <div className="font-rocker text-doom-silver/60">
-            Doom Whisperers © 2025
-          </div>
+        <div className="container mx-auto text-center font-cinzel text-doom-silver/60">
+          Doom Whisperers © 2025
         </div>
       </footer>
     </div>
