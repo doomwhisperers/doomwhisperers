@@ -1,4 +1,5 @@
 
+import React from 'react';
 import { Navbar } from "@/components/ui/navbar";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
@@ -83,13 +84,13 @@ const Index = () => {
         <div className="container mx-auto">
           <div className="flex justify-center space-x-8 mb-4">
             <a href="#" className="text-doom-silver hover:text-doom-neon-purple transition-colors">
-              <img src="/lovable-uploads/7fb486d9-0b0f-41a4-85b6-bcf4f8e16377.png" alt="Instagram" className="w-10 h-10 object-cover" />
+              <img src="/lovable-uploads/7fb486d9-0b0f-41a4-85b6-bcf4f8e16377.png" alt="Instagram" className="w-12 h-12 object-cover" />
             </a>
             <a href="#" className="text-doom-silver hover:text-doom-neon-purple transition-colors">
-              <img src="/lovable-uploads/f0928f67-b7c9-4b8f-9cfd-2a258a666ffd.png" alt="TikTok" className="w-10 h-10 object-cover" />
+              <img src="/lovable-uploads/f0928f67-b7c9-4b8f-9cfd-2a258a666ffd.png" alt="TikTok" className="w-12 h-12 object-cover" />
             </a>
             <a href="#" className="text-doom-silver hover:text-doom-neon-purple transition-colors">
-              <img src="/lovable-uploads/b6b5b791-8c34-475e-95c6-887230438967.png" alt="Discord" className="w-10 h-10 object-cover" />
+              <img src="/lovable-uploads/b6b5b791-8c34-475e-95c6-887230438967.png" alt="Discord" className="w-12 h-12 object-cover" />
             </a>
           </div>
           <div className="text-center font-im-fell text-doom-silver/60">
