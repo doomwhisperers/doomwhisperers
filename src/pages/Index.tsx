@@ -1,28 +1,28 @@
-
 import { Navbar } from "@/components/ui/navbar";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Instagram, Music, MessageSquare } from "lucide-react";
+import { BrandTiktok } from "lucide-react";
+
+const acceptedMembers = [
+  "DarkRaven",
+  "ShadowWhisper",
+  "MysticDragon",
+  "NightwalkerElite",
+  "CrimsonMage",
+  "EtherealPhantom",
+  "VoidSeeker",
+  "DoomHarbinger",
+];
+
+const rejectedMembers = [
+  "LostSoul404",
+  "ChaosBreaker",
+  "StormCaller",
+  "DuskWanderer",
+  "SilentShade",
+];
 
 const Index = () => {
-  const acceptedMembers = [
-    "DarkRaven",
-    "ShadowWhisper",
-    "MysticDragon",
-    "NightwalkerElite",
-    "CrimsonMage",
-    "EtherealPhantom",
-    "VoidSeeker",
-    "DoomHarbinger",
-  ];
-
-  const rejectedMembers = [
-    "LostSoul404",
-    "ChaosBreaker",
-    "StormCaller",
-    "DuskWanderer",
-    "SilentShade",
-  ];
-
   return (
     <div className="min-h-screen bg-doom-black bg-opacity-95 text-doom-silver">
       <Navbar />
@@ -59,10 +59,10 @@ const Index = () => {
 
           {/* Center - Main Content */}
           <div className="lg:col-span-6 text-center">
-            <h1 className="font-cinzel text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-pulse text-doom-neon-purple">
+            <h1 className="font-new-rocker text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-pulse text-doom-neon-purple">
               Doom Whisperers
             </h1>
-            <p className="text-lg md:text-xl font-cinzel text-doom-silver/80 italic mb-12">
+            <p className="text-lg md:text-xl font-im-fell text-doom-silver/80 italic mb-12">
               "Szepty nie milkną. One czekają. A gdy je usłyszysz… jesteś już jednym z nich."
             </p>
           </div>
@@ -87,13 +87,13 @@ const Index = () => {
               <Instagram size={24} />
             </a>
             <a href="#" className="text-doom-silver hover:text-doom-neon-purple transition-colors">
-              <Music size={24} />
+              <BrandTiktok size={24} />
             </a>
             <a href="#" className="text-doom-silver hover:text-doom-neon-purple transition-colors">
               <MessageSquare size={24} />
             </a>
           </div>
-          <div className="text-center font-cinzel text-doom-silver/60">
+          <div className="text-center font-im-fell text-doom-silver/60">
             Doom Whisperers © 2025
           </div>
         </div>
