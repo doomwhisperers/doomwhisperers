@@ -7,7 +7,7 @@ const Outfit = () => {
       <Navbar />
       
       <main className="container mx-auto px-4 py-12">
-        <h2 className="font-cinzel text-4xl md:text-5xl text-center mb-12 animate-text-glow bg-clip-text text-transparent bg-gradient-to-r from-doom-purple to-doom-neon-purple">
+        <h2 className="font-new-rocker text-4xl md:text-5xl text-center mb-12 animate-text-glow bg-clip-text text-transparent bg-gradient-to-r from-doom-purple to-doom-neon-purple">
           Strój
         </h2>
         
@@ -15,18 +15,18 @@ const Outfit = () => {
           <div className="bg-doom-navy/30 p-8 rounded-lg border border-doom-purple/30">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-6">
-                <h3 className="font-cinzel text-2xl text-doom-neon-purple mb-4">
+                <h3 className="font-new-rocker text-2xl text-doom-neon-purple mb-4">
                   Oficjalny Strój Klubowy
                 </h3>
-                <p className="text-lg font-cinzel">
+                <p className="text-lg font-im-fell">
                   Nasz strój odzwierciedla esencję Doom Whispers - połączenie mroku z magicznym blaskiem.
                   Dominują w nim głębokie czernie i fiolety, uzupełnione subtelnymi, świetlistymi akcentami.
                 </p>
                 <ul className="space-y-3 text-doom-silver/80">
-                  <li className="font-cinzel">• Czarna szata z fioletowymi obszyciami</li>
-                  <li className="font-cinzel">• Srebrne runy na rękawach</li>
-                  <li className="font-cinzel">• Emblemat smoka na piersi</li>
-                  <li className="font-cinzel">• Fioletowa poświata w detalach</li>
+                  <li className="font-im-fell">• Czarna szata z fioletowymi obszyciami</li>
+                  <li className="font-im-fell">• Srebrne runy na rękawach</li>
+                  <li className="font-im-fell">• Emblemat smoka na piersi</li>
+                  <li className="font-im-fell">• Fioletowa poświata w detalach</li>
                 </ul>
               </div>
               

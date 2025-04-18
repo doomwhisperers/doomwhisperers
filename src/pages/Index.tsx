@@ -31,11 +31,11 @@ const Index = () => {
           {/* Left Side - Member Lists */}
           <div className="lg:col-span-3 grid grid-cols-2 gap-4">
             <div className="w-full p-4 border border-doom-purple rounded-lg bg-doom-black/50">
-              <h3 className="font-cinzel text-doom-neon-purple mb-4 text-center">Przyjęci</h3>
+              <h3 className="font-new-rocker text-doom-neon-purple mb-4 text-center">Przyjęci</h3>
               <ScrollArea className="h-48">
                 <ul className="space-y-2">
                   {acceptedMembers.map((member, index) => (
-                    <li key={index} className="font-cinzel text-doom-silver/80 hover:text-doom-neon-purple transition-colors text-sm">
+                    <li key={index} className="font-im-fell text-doom-silver/80 hover:text-doom-neon-purple transition-colors text-sm">
                       {member}
                     </li>
                   ))}
@@ -43,11 +43,11 @@ const Index = () => {
               </ScrollArea>
             </div>
             <div className="w-full p-4 border border-doom-purple rounded-lg bg-doom-black/50">
-              <h3 className="font-cinzel text-doom-neon-purple mb-4 text-center">Odrzuceni</h3>
+              <h3 className="font-new-rocker text-doom-neon-purple mb-4 text-center">Odrzuceni</h3>
               <ScrollArea className="h-48">
                 <ul className="space-y-2">
                   {rejectedMembers.map((member, index) => (
-                    <li key={index} className="font-cinzel text-doom-silver/80 hover:text-doom-neon-purple transition-colors text-sm">
+                    <li key={index} className="font-im-fell text-doom-silver/80 hover:text-doom-neon-purple transition-colors text-sm">
                       {member}
                     </li>
                   ))}
