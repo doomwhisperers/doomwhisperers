@@ -64,6 +64,8 @@ export default {
       },
       fontFamily: {
         cinzel: ['Cinzel', 'serif'],
+        'new-rocker': ['"New Rocker"', 'cursive'],
+        'im-fell': ['"IM Fell English SC"', 'serif'],
       },
       keyframes: {
         'glow': {

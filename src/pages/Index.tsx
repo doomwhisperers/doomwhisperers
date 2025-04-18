@@ -1,6 +1,7 @@
 
 import { Navbar } from "@/components/ui/navbar";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Instagram, Music, MessageSquare } from "lucide-react";
 
 const Index = () => {
   const acceptedMembers = [
@@ -72,16 +73,29 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/3bc4f1ec-2bc9-4083-9f06-b121fcb7c6bc.png"
                 alt="Mroczny koń z magicznymi, fioletowymi runami"
-                className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
         </div>
       </main>
 
-      <footer className="w-full bg-doom-black/90 border-t border-doom-purple/30 py-4 mt-12">
-        <div className="container mx-auto text-center font-cinzel text-doom-silver/60">
-          Doom Whisperers © 2025
+      <footer className="w-full bg-doom-black/90 border-t border-doom-purple/30 py-6 mt-12">
+        <div className="container mx-auto">
+          <div className="flex justify-center space-x-8 mb-4">
+            <a href="#" className="text-doom-silver hover:text-doom-neon-purple transition-colors">
+              <Instagram size={24} />
+            </a>
+            <a href="#" className="text-doom-silver hover:text-doom-neon-purple transition-colors">
+              <Music size={24} />
+            </a>
+            <a href="#" className="text-doom-silver hover:text-doom-neon-purple transition-colors">
+              <MessageSquare size={24} />
+            </a>
+          </div>
+          <div className="text-center font-cinzel text-doom-silver/60">
+            Doom Whisperers © 2025
+          </div>
         </div>
       </footer>
     </div>
