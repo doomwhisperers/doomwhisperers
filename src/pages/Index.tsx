@@ -1,7 +1,6 @@
 import { Navbar } from "@/components/ui/navbar";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Instagram, Music, MessageSquare } from "lucide-react";
-import { BrandTiktok } from "lucide-react";
+import { Instagram, TikTok, MessageSquare } from "lucide-react";
 
 const acceptedMembers = [
   "DarkRaven",
@@ -87,7 +86,7 @@ const Index = () => {
               <Instagram size={24} />
             </a>
             <a href="#" className="text-doom-silver hover:text-doom-neon-purple transition-colors">
-              <BrandTiktok size={24} />
+              <TikTok size={24} />
             </a>
             <a href="#" className="text-doom-silver hover:text-doom-neon-purple transition-colors">
               <MessageSquare size={24} />
