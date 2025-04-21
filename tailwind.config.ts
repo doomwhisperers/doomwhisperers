@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -65,6 +66,7 @@ export default {
         cinzel: ['Cinzel', 'serif'],
         'new-rocker': ['"New Rocker"', 'cursive'],
         'im-fell': ['"IM Fell English SC"', 'serif'],
+        'gotisch': ['"Grenze Gotisch"', 'serif'],
       },
       keyframes: {
         'glow': {
