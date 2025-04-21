@@ -1,5 +1,6 @@
 
 import { Navbar } from "@/components/ui/navbar";
+import { SocialFooter } from "@/components/ui/social-footer";
 
 const aboutContent = `
 Na pierwszy rzut oka to tylko klub. Grupa jeźdźców, która z zewnątrz nie różni się zbytnio od innych. Ale ci, którzy wejdą głębiej, szybko zrozumieją, że Doom Whisperers to coś więcej. Coś starszego. Potężniejszego. I mroczniejszego.
@@ -27,23 +28,24 @@ export default function About() {
   return (
     <div className="min-h-screen bg-doom-black bg-opacity-95 text-doom-silver font-gotisch">
       <Navbar />
-
       <main className="container mx-auto px-4 py-12">
-        <h2 className="font-new-rocker text-4xl md:text-5xl text-center mb-12 animate-text-glow bg-clip-text text-transparent bg-gradient-to-r from-doom-purple to-doom-neon-purple">
+        <h2 className="doom-heading text-center mb-12 text-4xl md:text-5xl">
           O nas
         </h2>
         <div className="max-w-4xl mx-auto">
-          <div className="bg-doom-black/70 p-8 rounded-xl border-2 border-doom-purple shadow-xl transition-transform duration-200 hover:scale-105">
-            <div className="text-lg md:text-xl font-gotisch whitespace-pre-line leading-relaxed">
+          <div className="bg-doom-black/70 p-8 rounded-xl border-2 border-doom-purple shadow-xl">
+            <div className="text-base md:text-lg font-gotisch whitespace-pre-line leading-relaxed">
               {aboutContent}
             </div>
           </div>
         </div>
       </main>
-
-      <footer className="w-full bg-doom-black/90 border-t border-doom-purple/30 py-4 mt-12">
-        <div className="container mx-auto text-center font-gotisch text-doom-silver/60">
-          Doom Whisperers © 2025
+      <footer className="w-full bg-doom-black/90 border-t border-doom-purple/30 py-6 mt-12">
+        <div className="container mx-auto">
+          <SocialFooter />
+          <div className="text-center font-gotisch text-doom-silver/60">
+            Doom Whisperers © 2025
+          </div>
         </div>
       </footer>
     </div>

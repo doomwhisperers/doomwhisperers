@@ -92,5 +92,21 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        '.doom-heading': {
+          fontFamily: '"New Rocker", cursive',
+          background: 'linear-gradient(90deg, #6B2FB3, #B829F7 40%, #FF59F7 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          textFillColor: 'transparent',
+          animation: 'glow 3s ease-in-out infinite',
+          letterSpacing: '2px',
+        },
+      });
+    },
+    require("tailwindcss-animate"),
+  ],
 } satisfies Config;
