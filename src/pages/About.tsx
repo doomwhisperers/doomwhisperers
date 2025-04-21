@@ -30,12 +30,11 @@ export default function About() {
       <Navbar />
 
       <main className="container mx-auto px-4 py-12">
-        <h2 className="header-gradient font-new-rocker text-4xl md:text-5xl text-center mb-12">
-          O nas
-        </h2>
+        <h2 className="doom-heading text-center mb-12">O nas</h2>
         <div className="max-w-4xl mx-auto">
-          <div className="bg-doom-black/70 p-8 rounded-xl border-2 border-doom-purple shadow-xl">
-            <div className="text-base md:text-lg font-gotisch whitespace-pre-line leading-relaxed">
+          <div className="doom-card">
+            {/* Użyj IM Fell English SC która ma polskie znaki */}
+            <div className="text-base md:text-lg" style={{ fontFamily: '"IM Fell English SC", serif' }}>
               {aboutContent}
             </div>
           </div>

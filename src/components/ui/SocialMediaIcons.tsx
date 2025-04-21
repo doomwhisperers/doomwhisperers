@@ -3,24 +3,24 @@ import React from "react";
 
 const ICONS = [
   {
-    src: "/lovable-uploads/675386da-cbc9-4b9f-9571-f0544e9f64dc.png", // Instagram
+    src: "/lovable-uploads/bc484f01-4c63-4c5a-9974-6ab8105d8304.png", // Instagram (user provided)
     alt: "Instagram",
     href: "https://www.instagram.com/doomwhisperers/",
   },
   {
-    src: "/lovable-uploads/f73f8562-6de7-4799-b646-8306fbac85c4.png", // TikTok
+    src: "/lovable-uploads/b39ac149-b8e3-4bf2-858f-e7df8660909e.png", // TikTok (user provided)
     alt: "TikTok",
     href: "https://www.tiktok.com/@doomwhisperers/",
   },
   {
-    src: "/lovable-uploads/ef9194ee-51e9-46e6-af45-7c43c345c9b4.png", // Discord
+    src: "/lovable-uploads/d5dc8395-e604-47ac-8aca-73104d05eecf.png", // Discord (user provided)
     alt: "Discord",
     href: "https://discord.gg/3seekyxNVA",
   },
 ];
 
 export function SocialMediaIcons({ className = "" }: { className?: string }) {
-  // Wszystkie ikony mają tę samą szerokość, wysokość, padding, spójna ramka
+  // Poprawione: identyczna szerokość, wysokość i padding niezależnie od obrazka
   return (
     <div className={`flex justify-center items-center space-x-6 ${className}`}>
       {ICONS.map((icon, i) => (
@@ -36,7 +36,7 @@ export function SocialMediaIcons({ className = "" }: { className?: string }) {
             src={icon.src}
             alt={icon.alt}
             className="w-12 h-12 object-contain"
-            style={{ minWidth: 48, minHeight: 48 }}
+            style={{ minWidth: 48, minHeight: 48, maxWidth: 48, maxHeight: 48 }}
           />
         </a>
       ))}
