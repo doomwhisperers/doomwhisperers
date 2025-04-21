@@ -63,7 +63,7 @@ export default {
         },
       },
       fontFamily: {
-        'cinzel': ['Cinzel', 'serif'],
+        cinzel: ['Cinzel', 'serif'],
         'new-rocker': ['"New Rocker"', 'cursive'],
         'im-fell': ['"IM Fell English SC"', 'serif'],
         'gotisch': ['"Grenze Gotisch"', 'serif'],
@@ -94,4 +94,3 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
-
