@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,7 +97,7 @@
   }
 
   body {
-    @apply bg-doom-black text-foreground;
+    @apply bg-doom-black text-foreground font-gotisch;
     background-image: 
       linear-gradient(to bottom, rgba(10, 10, 12, 0.95), rgba(26, 31, 44, 0.95)),
       url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236B2FB3' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -105,4 +106,23 @@
   ::selection {
     @apply bg-doom-purple/30 text-doom-silver;
   }
+}
+
+/* Gradient/Glow for nagłówki */
+.header-gradient {
+  background: linear-gradient(90deg, #6B2FB3 0%, #B829F7 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  filter: drop-shadow(0 0 4px #6B2FB3) drop-shadow(0 0 7px #B829F7);
+  animation: glow 3s ease-in-out infinite;
+  /* font effect universal for headings */
+}
+
+.text-doom-neon-purple,
+.text-doom-purple {
+  font-family: "New Rocker", cursive !important;
+  /* force purple texts and highlighted texts to have nagłówek font */
 }
