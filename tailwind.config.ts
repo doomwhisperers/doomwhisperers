@@ -97,13 +97,16 @@ export default {
       addComponents({
         '.doom-heading': {
           fontFamily: '"New Rocker", cursive',
-          background: 'linear-gradient(90deg, #6B2FB3, #B829F7 40%, #FF59F7 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          textFillColor: 'transparent',
+          // USUWAMY gradient! Zostawiamy tylko efekt świetlny, font i spacing
           animation: 'glow 3s ease-in-out infinite',
           letterSpacing: '2px',
+          fontWeight: 'bold',
+          color: '#B829F7', // mocny fiolet zamiast gradientu!
+          WebkitBackgroundClip: 'initial',
+          WebkitTextFillColor: 'initial',
+          background: 'none',
+          backgroundClip: 'initial',
+          textFillColor: 'initial',
         },
       });
     },
