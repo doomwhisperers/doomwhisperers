@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Navbar } from "@/components/ui/navbar";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -31,9 +30,9 @@ const Index = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Left Side - Member Lists */}
           <div className="lg:col-span-3 grid grid-cols-2 gap-4">
-            <div className="w-full p-8 border-2 border-doom-purple rounded-xl bg-doom-black/70 shadow-xl"> {/* Increased padding */}
+            <div className="w-full p-6 border-2 border-doom-purple rounded-xl bg-doom-black/70 shadow-xl">
               <h3 className="doom-heading mb-4 text-center text-2xl">Przyjęci</h3>
-              <ScrollArea className="h-64"> {/* Slightly increased height */}
+              <ScrollArea className="h-56">
                 <ul className="space-y-3">
                   {acceptedMembers.map((member, index) => (
                     <li key={index} className="font-gotisch text-doom-silver/80 hover:text-doom-neon-purple transition-colors text-lg">
@@ -43,9 +42,9 @@ const Index = () => {
                 </ul>
               </ScrollArea>
             </div>
-            <div className="w-full p-8 border-2 border-doom-purple rounded-xl bg-doom-black/70 shadow-xl"> {/* Increased padding */}
+            <div className="w-full p-6 border-2 border-doom-purple rounded-xl bg-doom-black/70 shadow-xl">
               <h3 className="doom-heading mb-4 text-center text-2xl">Odrzuceni</h3>
-              <ScrollArea className="h-64"> {/* Slightly increased height */}
+              <ScrollArea className="h-56">
                 <ul className="space-y-3">
                   {rejectedMembers.map((member, index) => (
                     <li key={index} className="font-gotisch text-doom-silver/80 hover:text-doom-neon-purple transition-colors text-lg">
