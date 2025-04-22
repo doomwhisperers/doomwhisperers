@@ -8,8 +8,8 @@ export function Navbar() {
       <div className="container mx-auto flex items-center justify-between">
         <Link
           to="/"
-          className="doom-heading text-xl transition-colors"
-          style={{ color: '#B829F7', fontFamily: '"New Rocker", cursive', letterSpacing: '2px', fontWeight: 'bold' }}
+          className="text-white text-xl transition-colors" // Changed to white text
+          style={{ fontFamily: '"New Rocker", cursive', letterSpacing: '2px', fontWeight: 'bold' }}
         >
           Doom Whisperers
         </Link>
