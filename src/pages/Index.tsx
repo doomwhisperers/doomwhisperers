@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Navbar } from "@/components/ui/navbar";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -31,7 +30,7 @@ const Index = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Left Side - Member Lists */}
           <div className="lg:col-span-3 grid grid-cols-2 gap-4">
-            <div className="w-full p-8 border-2 border-doom-purple rounded-xl bg-doom-black/70 shadow-xl">
+            <div className="w-80 p-8 border-2 border-doom-purple rounded-xl bg-doom-black/70 shadow-xl">
               <h3 className="doom-heading mb-6 text-center text-2xl">Przyjęci</h3>
               <ScrollArea className="h-72">
                 <ul className="space-y-3">
@@ -43,7 +42,7 @@ const Index = () => {
                 </ul>
               </ScrollArea>
             </div>
-            <div className="w-full p-8 border-2 border-doom-purple rounded-xl bg-doom-black/70 shadow-xl">
+            <div className="w-80 p-8 border-2 border-doom-purple rounded-xl bg-doom-black/70 shadow-xl">
               <h3 className="doom-heading mb-6 text-center text-2xl">Odrzuceni</h3>
               <ScrollArea className="h-72">
                 <ul className="space-y-3">
