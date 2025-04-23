@@ -10,7 +10,7 @@ export default function Outfit() {
         <h2 className="doom-heading text-center mb-12 text-4xl md:text-5xl">
           Strój
         </h2>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-doom-black/70 p-8 rounded-xl border-2 border-doom-purple shadow-xl">
             <ul className="font-gotisch text-sm md:text-base space-y-4">
               <li className="mb-1 font-semibold text-doom-neon-purple !font-new-rocker">Postać:</li>
@@ -77,6 +77,14 @@ export default function Outfit() {
                 <span className="ml-1 text-xs text-doom-silver/70">79</span>
               </li>
             </ul>
+          </div>
+          <div className="w-full h-full rounded-xl border-2 border-doom-purple overflow-hidden bg-doom-black/70">
+            <img 
+              src="/lovable-uploads/1cfb86aa-54a7-485d-b24c-121669ab0273.png"
+              alt="Strój klubowy Doom Whisperers"
+              className="w-full h-full object-contain"
+              draggable={false}
+            />
           </div>
         </div>
       </main>

@@ -29,7 +29,7 @@ const Index = () => {
       <main className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {/* Left Side - Member Lists */}
-          <div className="lg:col-span-3 grid grid-cols-2 gap-4">
+          <div className="lg:col-span-4 grid grid-cols-2 gap-4">
             <div className="w-full p-6 border-2 border-doom-purple rounded-xl bg-doom-black/70 shadow-xl">
               <h3 className="doom-heading mb-4 text-center text-2xl">Przyjęci</h3>
               <ScrollArea className="h-56">
@@ -57,7 +57,7 @@ const Index = () => {
           </div>
 
           {/* Center - Main Content */}
-          <div className="lg:col-span-6 flex flex-col items-center justify-center">
+          <div className="lg:col-span-5 flex flex-col items-center justify-center">
             <h1 className="doom-heading text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
               Doom Whisperers
             </h1>
