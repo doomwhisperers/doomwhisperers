@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Navbar } from "@/components/ui/navbar";
 import { ScrollArea } from "@/components/ui/scroll-area";
@@ -57,8 +58,8 @@ const Index = () => {
           </div>
 
           {/* Center - Main Content */}
-          <div className="lg:col-span-5 flex flex-col items-center justify-center">
-            <h1 className="doom-heading text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+          <div className="lg:col-span-5 flex flex-col items-center justify-center text-center">
+            <h1 className="doom-heading text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-center w-full">
               Doom Whisperers
             </h1>
             <p className="text-base md:text-lg font-gotisch text-doom-silver/80 italic mb-10 truncate max-w-xl text-center">
