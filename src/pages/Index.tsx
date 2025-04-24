@@ -5,9 +5,22 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { SocialFooter } from "@/components/ui/social-footer";
 
 const acceptedMembers = [
+  "DarkRaven",
+  "ShadowWhisper",
+  "MysticDragon",
+  "NightwalkerElite",
+  "CrimsonMage",
+  "EtherealPhantom",
+  "VoidSeeker",
+  "DoomHarbinger",
 ];
 
 const rejectedMembers = [
+  "LostSoul404",
+  "ChaosBreaker",
+  "StormCaller",
+  "DuskWanderer",
+  "SilentShade",
 ];
 
 const Index = () => {
